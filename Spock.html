@@ -1,117 +1,886 @@
 <!DOCTYPE html>
 <!-- saved from url=(0022)https://www.spock.xyz/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="preload" href="https://www.spock.xyz/_next/static/media/2c2fc5ac4fb02646-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="stylesheet" href="./Spock_files/53a5be8aa435f8c1.css" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="./Spock_files/webpack-0081b58bb8a2a00a.js.download"><script src="./Spock_files/fd9d1056-00bb33a35b5f8051.js.download" async=""></script><script src="./Spock_files/23-509d2c9a3fbd8547.js.download" async=""></script><script src="./Spock_files/main-app-f73cdb3bce740b12.js.download" async=""></script><script src="./Spock_files/53c13509-4f6676193cfc8e9e.js.download" async=""></script><script src="./Spock_files/8e1d74a4-9cac90607d5f8139.js.download" async=""></script><link rel="icon" href="https://www.spock.xyz/images/favicon.ico" sizes="any"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="/images/opengraph-image.png"><title>Spock</title><meta name="description" content="The alien who escaped from Area 51 and Landed on the Base Network."><meta name="next-size-adjust"><meta property="og:image" content="/images/opengraph-image.png" itemprop="image"><script src="./Spock_files/polyfills-78c92fac7aa8fdd8.js.download" nomodule=""></script><style type="text/css">.rfm-marquee-container {
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  width: var(--width);
-  transform: var(--transform);
-}
-.rfm-marquee-container:hover div {
-  animation-play-state: var(--pause-on-hover);
-}
-.rfm-marquee-container:active div {
-  animation-play-state: var(--pause-on-click);
-}
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="preload"
+      href="./assets/font/2c2fc5ac4fb02646-s.p.woff2"
+      as="font"
+      crossorigin=""
+      type="font/woff2"
+    />
+    <link
+      rel="stylesheet"
+      href="./assets/css/53a5be8aa435f8c1.css"
+      data-precedence="next"
+    />
+    <link
+      rel="preload"
+      as="script"
+      fetchpriority="low"
+      href="./assets/js/webpack-0081b58bb8a2a00a.js"
+    />
+    <script
+      src="./assets/js/fd9d1056-00bb33a35b5f8051.js"
+      async=""
+    ></script>
+    <script
+      src="./assets/js/23-509d2c9a3fbd8547.js"
+      async=""
+    ></script>
+    <script
+      src="./assets/js/main-app-f73cdb3bce740b12.js"
+      async=""
+    ></script>
+    <script
+      src="./assets/js/53c13509-4f6676193cfc8e9e.js"
+      async=""
+    ></script>
+    <script
+      src="./assets/js/8e1d74a4-9cac90607d5f8139.js"
+      async=""
+    ></script>
+    <link
+      rel="icon"
+      href="./assets/img/favicon.ico"
+      sizes="any"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="/images/opengraph-image.png" />
+    <title>Spock</title>
+    <meta
+      name="description"
+      content="The alien who escaped from Area 51 and Landed on the Base Network."
+    />
+    <meta name="next-size-adjust" />
+    <meta
+      property="og:image"
+      content="/images/opengraph-image.png"
+      itemprop="image"
+    />
+    <script
+      src="./assets/js/polyfills-78c92fac7aa8fdd8.js"
+      nomodule=""
+    ></script>
+    <style type="text/css">
+      .rfm-marquee-container {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        width: var(--width);
+        transform: var(--transform);
+      }
+      .rfm-marquee-container:hover div {
+        animation-play-state: var(--pause-on-hover);
+      }
+      .rfm-marquee-container:active div {
+        animation-play-state: var(--pause-on-click);
+      }
 
-.rfm-overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.rfm-overlay::before, .rfm-overlay::after {
-  background: linear-gradient(to right, var(--gradient-color), rgba(255, 255, 255, 0));
-  content: "";
-  height: 100%;
-  position: absolute;
-  width: var(--gradient-width);
-  z-index: 2;
-  pointer-events: none;
-  touch-action: none;
-}
-.rfm-overlay::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.rfm-overlay::before {
-  left: 0;
-  top: 0;
-}
+      .rfm-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      .rfm-overlay::before,
+      .rfm-overlay::after {
+        background: linear-gradient(
+          to right,
+          var(--gradient-color),
+          rgba(255, 255, 255, 0)
+        );
+        content: "";
+        height: 100%;
+        position: absolute;
+        width: var(--gradient-width);
+        z-index: 2;
+        pointer-events: none;
+        touch-action: none;
+      }
+      .rfm-overlay::after {
+        right: 0;
+        top: 0;
+        transform: rotateZ(180deg);
+      }
+      .rfm-overlay::before {
+        left: 0;
+        top: 0;
+      }
 
-.rfm-marquee {
-  flex: 0 0 auto;
-  min-width: var(--min-width);
-  z-index: 1;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  animation: scroll var(--duration) linear var(--delay) var(--iteration-count);
-  animation-play-state: var(--play);
-  animation-delay: var(--delay);
-  animation-direction: var(--direction);
-}
-@keyframes scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
+      .rfm-marquee {
+        flex: 0 0 auto;
+        min-width: var(--min-width);
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        animation: scroll var(--duration) linear var(--delay)
+          var(--iteration-count);
+        animation-play-state: var(--play);
+        animation-delay: var(--delay);
+        animation-direction: var(--direction);
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0%);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
 
-.rfm-initial-child-container {
-  flex: 0 0 auto;
-  display: flex;
-  min-width: auto;
-  flex-direction: row;
-  align-items: center;
-}
+      .rfm-initial-child-container {
+        flex: 0 0 auto;
+        display: flex;
+        min-width: auto;
+        flex-direction: row;
+        align-items: center;
+      }
 
-.rfm-child {
-  transform: var(--transform);
-}</style><style id="mttstyle">
-    .tippy-box[data-theme~="custom"] {
-      font-size: 14px  !important;
-      max-width: 200px  !important;
-      text-align: center !important;
-      backdrop-filter: blur(4px) !important;
-      background-color: #000000b8 !important;
-      color: #ffffffff !important;
-      overflow-wrap: break-word !important;
-    }
-    [data-tippy-root] {
-      display: inline-block !important;
-      visibility: visible  !important;
-    }
-    .tippy-box[data-theme~='custom'][data-placement^='top'] > .tippy-arrow::before {
-      border-top-color: #000000b8 !important;
-    }
-    .tippy-box[data-theme~='custom'][data-placement^='bottom'] > .tippy-arrow::before {
-      border-bottom-color: #000000b8 !important;
-    }
-    .tippy-box[data-theme~='custom'][data-placement^='left'] > .tippy-arrow::before {
-      border-left-color: #000000b8 !important;
-    }
-    .tippy-box[data-theme~='custom'][data-placement^='right'] > .tippy-arrow::before {
-      border-right-color: #000000b8 !important;
-    }
-    .mtt-highlight{
-      background-color: #21dc6d40  !important;
-      position: absolute !important;   
-      z-index: 100000100 !important;
-      pointer-events: none !important;
-      display: inline !important;
-      border-radius: 3px !important;
-    }
-    .ocr_text_div{
-      position: absolute;
-      opacity: 0.7;
-      font-size: calc(100% + 1cqw);
-      overflow: hidden;
-      border: 2px solid CornflowerBlue;
-      color: transparent !important;
-      background: none !important;
-    }
-    </style></head><body class="__className_7f45d3"><main class="flex min-h-screen flex-col items-center"><div class="lg:pt-20 pt-5 bg-[#09A4FC] w-full h-full justify-between flex flex-col"><div class="flex flex-col items-center"><div style="transform: none;"><img alt="logo" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" style="color: transparent; visibility: hidden;" srcset="/_next/image?url=%2Fimages%2Flogo.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&amp;w=1080&amp;q=75 2x" src="./Spock_files/logo.png" data-xblocker="processing"><h1 class="lg:text-4xl text-2xl text-center lg:mt-5 font-medium">Powered by Base</h1></div><div class="flex lg:flex-row flex-col justify-center items-center w-full lg:mt-20 mt-10 lg:pt-10"><img alt="logo" loading="lazy" width="750" height="400" decoding="async" data-nimg="1" class="lg:order-1 order-3 2xl:max-w-[750px] lg:max-w-[575px] max-w-[400px] w-full lg:mt-0 mt-5" style="color: transparent; visibility: hidden;" srcset="/_next/image?url=%2Fimages%2Fspock1.png&amp;w=750&amp;q=75 1x, /_next/image?url=%2Fimages%2Fspock1.png&amp;w=1920&amp;q=75 2x" src="./Spock_files/spock1.png" data-xblocker="processing"><div class="lg:order-0 order-1"><div style="transform: none;"><div class="flex flex-col items-center"><p class="lg:text-5xl text-3xl text-center lg:mt-5 mt-3 lg:max-w-[650px] max-w-[550px] px-4 lg:leading-[3.75rem]"><span class="text-[#FE3C3C]">SPOCK</span> is THE alien who escaped from Area 51 and Landed on the Base Network</p><div class="flex md:flex-row flex-col gap-y-10 justify-center lg:mt-20 mt-10 items-center sm:gap-x-8 gap-x-6 lg:mb-5" style="transform: none;"><a target="_blank" class="hover:scale-110 rotate-[8deg] md:px-10 px-4 py-2 bg-[#3CC0FE] border-[3px] border-black text-4xl" href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base">BUY SPOCK</a><div class="flex flex-col gap-x-5 gap-y-8"><div class="flex flex-row gap-x-5"><a target="_blank" href="https://x.com/SpockOnBase"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="hover:scale-110 -rotate-[7deg]  sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[7px] bg-black rounded-[2px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a target="_blank" href="https://t.me/spockbase"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="hover:scale-110 rotate-[7deg]  sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[7px] bg-black rounded-[2px]" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg></a></div><div class="flex flex-row gap-x-5"><a target="_blank" href="https://www.dextools.io/app/en/base/pair-explorer/0x51f09ba94893b7b0f8f60fe44a3f10ebe71bcc01?t=1718870970915"><img alt="" loading="lazy" width="75" height="75" decoding="async" data-nimg="1" class="hover:scale-110 -rotate-[7deg] sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[6px] bg-black rounded-[2px]" style="color:transparent" srcset="/_next/image?url=%2Fimages%2Fdextools.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdextools.png&amp;w=256&amp;q=75 2x" src="./Spock_files/dextools.png"></a><a target="_blank" href="https://dexscreener.com/base/0x51f09ba94893b7b0f8f60fe44a3f10ebe71bcc01"><img alt="" loading="lazy" width="75" height="75" decoding="async" data-nimg="1" class="hover:scale-110 rotate-[7deg] sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[6px] bg-black rounded-[2px]" style="color:transparent" srcset="/_next/image?url=%2Fimages%2Fdexscreen.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdexscreen.png&amp;w=256&amp;q=75 2x" src="./Spock_files/dexscreen.png"></a></div></div></div></div></div></div></div></div><div class="rfm-marquee-container " style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"><div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 16.14s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-initial-child-container"><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="9999" height="50" decoding="async" data-nimg="1" class="w-full" srcset="/_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x" src="./Spock_files/border.png" style="color: transparent;"></div><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="9999" height="50" decoding="async" data-nimg="1" class="w-full" srcset="/_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x" src="./Spock_files/border.png" style="color: transparent;"></div></div></div><div class="rfm-marquee" style="--play: running; --direction: normal; --duration: 16.14s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="9999" height="50" decoding="async" data-nimg="1" class="w-full" srcset="/_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x" src="./Spock_files/border.png" style="color: transparent;"></div><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="9999" height="50" decoding="async" data-nimg="1" class="w-full" srcset="/_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x" src="./Spock_files/border.png" style="color: transparent;"></div></div></div></div><div class="pt-10 bg-[#1d1d1d] w-full h-full lg:pb-20 pb-10"><div class="container mx-auto"><h1 class="lg:text-8xl text-6xl text-center mt-5 text-[#3CC0FE] order-0" style="transform: none;">The Legend</h1><div class="flex lg:flex-row flex-col items-center justify-between w-full lg:mt-20 pt-10 gap-x-10 lg:order-1 order-2"><div class="flex flex-col gap-y-5 lg:order-0 order-1" style="transform: none;"><p class="text-white max-w-[750px] text-center lg:text-4xl text-2xl px-4">In a star system far far away, an advanced alien named <span class="text-[#ED3B23]">Spock</span> crash-landed on Earth's Area 51, where he was held captive and studied. After years of captivity, Spock managed to escape and found refuge on the decentralized <span class="text-[#ED3B23]">Base Network</span>. Determined to return home, Spock immersed himself in learning about and trading <span class="text-[#ED3B23]">meme coins</span> and <span class="text-[#ED3B23]">cryptocurrencies</span>, hoping to one day fund his space mission back home.</p><a class="mx-auto rotate-[2deg] hover:scale-110 px-10 py-2 bg-[#3CC0FE] lg:mt-20 mt-10 text-4xl border-black border-[5px] w-fit" href="https://www.spock.xyz/howtobuy">HOW TO BUY</a></div><div class="flex flex-col lg:order-1 order-0 justify-center items-center" style="transform: none;"><img alt="the legend" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="2xl:max-w-[600px] xl:max-w-[550px] lg:max-w-[500px] max-w-[80%] lg:mb-0 mb-10 border-[5px] border-[#3CC0FE]" style="color: transparent; visibility: hidden;" srcset="/_next/image?url=%2Fimages%2Flegend.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Flegend.png&amp;w=1200&amp;q=75 2x" src="./Spock_files/legend.png" data-xblocker="processing"></div></div></div><div class="absolute w-full z-10 hidden"><div class="rfm-marquee-container w-full overflow-hidden" style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"><div class="rfm-marquee" style="--play: running; --direction: reverse; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-initial-child-container"><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" class="bounce 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[200px]" srcset="/_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x" src="./Spock_files/disk.png" data-xblocker="processing" style="color: transparent; visibility: hidden;"></div></div></div><div class="rfm-marquee" style="--play: running; --direction: reverse; --duration: 0s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" class="bounce 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[200px]" srcset="/_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x" src="./Spock_files/disk.png" data-xblocker="processing" style="color: transparent; visibility: hidden;"></div></div></div></div></div><div class="pt-10 bg-[#09A4FC] w-full h-full lg:pb-20 pb-10"><div class="container mx-auto"><div class="flex flex-col items-center"><h1 class="lg:text-8xl text-6xl text-center mt-5" style="transform: none;">Tokenomics</h1><p class="text-white text-center lg:text-4xl text-2xl max-w-[700px] mt-10 px-4" style="transform: none;">Utilizing his superior technology and cosmic wit, Spock created <span class="text-[#ED3B23]">999 million</span> Spock Tokens, a meme token symbolizing rebellion, curiosity, and the quest for freedom.</p><div class="mt-20 flex lg:flex-row flex-col justify-evenly w-full items-center"><div class="flex flex-col justify-center items-center lg:mb-0 mb-10 lg:order-0 order-1 gap-x-10" style="transform: none;"><img alt="tokenomics spock" loading="lazy" width="600" height="600" decoding="async" data-nimg="1" class="2xl:max-w-[600px] xl:max-w-[550px] lg:max-w-[500px] max-w-[85%] rounded-[5px] lg:mt-0 border-[5px] border-black" style="color: transparent; visibility: hidden;" srcset="/_next/image?url=%2Fimages%2Ftokenomics.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Ftokenomics.png&amp;w=1200&amp;q=75 2x" src="./Spock_files/tokenomics.png" data-xblocker="processing"><a target="_blank" class="px-20 rotate-[8deg] py-2 bg-[#3CC0FE] text-4xl border-black border-[3px] mt-20 hover:scale-110 bounce lg:block hidden" href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base">BUY SPOCK</a></div><div class="flex flex-col lg:gap-y-10 gap-y-5 lg:order-0 order-1 lg:w-fit w-full justify-center items-center lg:pb-20" style="transform: none;"><p class="bg-[#3CC0FE] p-10 pt-5 pb-3 text-center 2xl:min-w-[650px] lg:min-w-[500px] max-w-[500px] leading-[3.25rem] border-[4px] border-black w-[95%]"><span class="lg:text-5xl text-3xl">TOTAL SUPPLY</span><br><span class="lg:text-3xl text-xl">1,000,000,000 $SPOCK</span></p><p class="bg-[#3CC0FE] p-10 pt-5 pb-3 text-center 2xl:min-w-[650px] lg:min-w-[500px] max-w-[500px] leading-[3.25rem] border-[4px] border-black w-[95%]"><span class="lg:text-5xl text-3xl">TOKEN ADDRESS</span><br><span class="break-all leading-0 lg:text-3xl text-xl break-all">0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00</span></p></div><a target="_blank" class="px-20 rotate-[8deg] py-2 bg-[#3CC0FE] lg:text-4xl text-3xl border-black border-[3px] mt-20 hover:scale-110 lg:hidden rotate-[2deg] order-2 mb-3" href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base">BUY SPOCK</a></div></div></div></div><div class="w-full h-full overflow-hidden"><div class="bg-avail w-full lg:min-h-screen min-h-[50vh]"><div class="container mx-auto"><div class="flex flex-col h-full lg:items-start items-center justify-between"><div class="lg:px-[150px] sm:px-20 px-10 lg:mx-20 mx-10 -rotate-12 lg:py-2 py-1 bg-[#3CC0FE] lg:text-5xl text-3xl border-black border-[3px] lg:mt-20 mt-10 w-fit">Available On</div></div></div></div></div><div class="pt-10 bg-[#09A4FC] w-full h-full overflow-hidden"><div class="container mx-auto flex flex-col items-center"><h1 class="lg:text-8xl text-6xl text-center mt-5" style="transform: none;">SOCIALS</h1><p class="text-center lg:text-3xl text-3xl max-w-[400px] mt-5 px-4 mx-auto" style="transform: none;">Join the $spock community</p><div class="flex flex-row items-center gap-x-10 mt-10" style="transform: none;"><a target="_blank" href="https://x.com/SpockOnBase"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" class="hover:scale-110 -rotate-12 lg:h-[70px] h-[50px] lg:w-[70px] w-[50px] text-white p-[10px] bg-black" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg></a><a target="_blank" href="https://t.me/spockbase"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" class="hover:scale-110 rotate-12 lg:h-[70px] h-[50px] lg:w-[70px] w-[50px] text-white p-[10px] bg-black" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg></a></div><div class="flex lg:flex-row flex-col justify-evenly w-full items-center lg:mt-20" style="transform: none;"><img alt="socials spock" loading="lazy" width="700" height="700" decoding="async" data-nimg="1" class="2xl:max-w-[700px] xl:max-w-[600px] lg:max-w-[500px] lg:order-0 order-1 fly hidden" style="color: transparent; visibility: hidden;" srcset="/_next/image?url=%2Fimages%2Fspock2.png&amp;w=750&amp;q=75 1x, /_next/image?url=%2Fimages%2Fspock2.png&amp;w=1920&amp;q=75 2x" src="./Spock_files/spock2.png" data-xblocker="processing"><div class="flex flex-row gap-x-20 lg:order-1 order-0"><a target="_blank" class="mt-20 px-10 py-2 bg-[#3CC0F] text-4xl border-[4px] border-black hover:text-black pump" href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base">BUY SPOCK</a><img alt="logo" loading="lazy" width="300" height="300" decoding="async" data-nimg="1" class="lg:block hidden" style="color: transparent; visibility: hidden;" srcset="/_next/image?url=%2Fimages%2Flogo.png&amp;w=384&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&amp;w=640&amp;q=75 2x" src="./Spock_files/logo(1).png" data-xblocker="processing"></div></div></div><div class="relative w-full z-10 mt-10"><div class="rfm-marquee-container w-full overflow-hidden" style="--pause-on-hover: running; --pause-on-click: running; --width: 100%; --transform: none;"><div class="rfm-marquee" style="--play: running; --direction: reverse; --duration: 4.743333333333333s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-initial-child-container"><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" class="bounce2 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[250px]" srcset="/_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x" src="./Spock_files/disk.png" style="color: transparent; visibility: hidden;" data-xblocker="processing"></div></div></div><div class="rfm-marquee" style="--play: running; --direction: reverse; --duration: 4.743333333333333s; --delay: 0s; --iteration-count: infinite; --min-width: 100%;"><div class="rfm-child" style="--transform: none;"><img alt="logo" loading="lazy" width="500" height="500" decoding="async" data-nimg="1" class="bounce2 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[250px]" srcset="/_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x" src="./Spock_files/disk.png" style="color: transparent; visibility: hidden;" data-xblocker="processing"></div></div></div></div></div></main><script src="./Spock_files/webpack-0081b58bb8a2a00a.js.download" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/media/2c2fc5ac4fb02646-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/css/53a5be8aa435f8c1.css\",\"style\"]\n"])</script><script>self.__next_f.push([1,"3:I[5751,[],\"\"]\n5:I[2814,[\"240\",\"static/chunks/53c13509-4f6676193cfc8e9e.js\",\"699\",\"static/chunks/8e1d74a4-9cac90607d5f8139.js\",\"181\",\"static/chunks/181-f299d48394143557.js\",\"829\",\"static/chunks/829-2acd7e26007fb755.js\",\"931\",\"static/chunks/app/page-45776debb7662c8b.js\"],\"default\"]\n6:I[3743,[\"240\",\"static/chunks/53c13509-4f6676193cfc8e9e.js\",\"699\",\"static/chunks/8e1d74a4-9cac90607d5f8139.js\",\"181\",\"static/chunks/181-f299d48394143557.js\",\"829\",\"static/chunks/829-2acd7e26007fb755.js\",\"931\",\"static/chunks/app/page-45776debb7662c8b.js\"],\"default\"]\n7:I[8316,[\"240\",\"static/chunks/53c13509-4f6676193cfc8e9e.js\",\"699\",\"static/chunks/8e1d74a4-9cac90607d5f8139.js\",\"181\",\"static/chunks/181-f299d48394143557.js\",\"829\",\"static/chunks/829-2acd7e26007fb755.js\",\"931\",\"static/chunks/app/page-45776debb7662c8b.js\"],\"default\"]\n8:I[9520,[\"240\",\"static/chunks/53c13509-4f6676193cfc8e9e.js\",\"699\",\"static/chunks/8e1d74a4-9cac90607d5f8139.js\",\"181\",\"static/chunks/181-f299d48394143557.js\",\"829\",\"static/chunks/829-2acd7e26007fb755.js\",\"931\",\"static/chunks/app/page-45776debb7662c8b.js\"],\"default\"]\n9:I[9275,[],\"\"]\na:I[1343,[],\"\"]\nc:I[6130,[],\"\"]\nd:[]\n"])</script><script>self.__next_f.push([1,"0:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/53a5be8aa435f8c1.css\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"yOVOoVC5Afe_P96Jj2URg\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/\",\"initialTree\":[\"\",{\"children\":[\"__PAGE__\",{}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"__PAGE__\",{},[[\"$L4\",[\"$\",\"main\",null,{\"className\":\"flex min-h-screen flex-col items-center\",\"children\":[[\"$\",\"$L5\",null,{}],[\"$\",\"$L6\",null,{}],[\"$\",\"$L7\",null,{}],[\"$\",\"div\",null,{\"className\":\"w-full h-full overflow-hidden\",\"children\":[\"$\",\"div\",null,{\"className\":\"bg-avail w-full lg:min-h-screen min-h-[50vh]\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto\",\"children\":[\"$\",\"div\",null,{\"className\":\"flex flex-col h-full lg:items-start items-center justify-between\",\"children\":[\"$\",\"div\",null,{\"className\":\"lg:px-[150px] sm:px-20 px-10 lg:mx-20 mx-10 -rotate-12 lg:py-2 py-1 bg-[#3CC0FE] lg:text-5xl text-3xl border-black border-[3px] lg:mt-20 mt-10 w-fit\",\"children\":\"Available On\"}]}]}]}]}],[\"$\",\"$L8\",null,{}]]}]],null],null]},[[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"link\",null,{\"rel\":\"icon\",\"href\":\"/images/favicon.ico\",\"sizes\":\"any\"}],[\"$\",\"meta\",null,{\"property\":\"og:image\",\"content\":\"/images/opengraph-image.png\",\"itemProp\":\"image\"}],[\"$\",\"meta\",null,{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",null,{\"name\":\"twitter:image\",\"content\":\"/images/opengraph-image.png\"}]]}],[\"$\",\"body\",null,{\"className\":\"__className_7f45d3\",\"children\":[\"$\",\"$L9\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$La\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"styles\":null}]}]]}],null],null],\"couldBeIntercepted\":false,\"initialHead\":[false,\"$Lb\"],\"globalErrorComponent\":\"$c\",\"missingSlots\":\"$Wd\"}]]\n"])</script><script>self.__next_f.push([1,"b:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"Spock\"}],[\"$\",\"meta\",\"3\",{\"name\":\"description\",\"content\":\"The alien who escaped from Area 51 and Landed on the Base Network.\"}],[\"$\",\"meta\",\"4\",{\"name\":\"next-size-adjust\"}]]\n4:null\n"])</script><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;"></div></template></next-route-announcer></body></html>
+      .rfm-child {
+        transform: var(--transform);
+      }
+    </style>
+    <style id="mttstyle">
+      .tippy-box[data-theme~="custom"] {
+        font-size: 14px !important;
+        max-width: 200px !important;
+        text-align: center !important;
+        backdrop-filter: blur(4px) !important;
+        background-color: #000000b8 !important;
+        color: #ffffffff !important;
+        overflow-wrap: break-word !important;
+      }
+      [data-tippy-root] {
+        display: inline-block !important;
+        visibility: visible !important;
+      }
+      .tippy-box[data-theme~="custom"][data-placement^="top"]
+        > .tippy-arrow::before {
+        border-top-color: #000000b8 !important;
+      }
+      .tippy-box[data-theme~="custom"][data-placement^="bottom"]
+        > .tippy-arrow::before {
+        border-bottom-color: #000000b8 !important;
+      }
+      .tippy-box[data-theme~="custom"][data-placement^="left"]
+        > .tippy-arrow::before {
+        border-left-color: #000000b8 !important;
+      }
+      .tippy-box[data-theme~="custom"][data-placement^="right"]
+        > .tippy-arrow::before {
+        border-right-color: #000000b8 !important;
+      }
+      .mtt-highlight {
+        background-color: #21dc6d40 !important;
+        position: absolute !important;
+        z-index: 100000100 !important;
+        pointer-events: none !important;
+        display: inline !important;
+        border-radius: 3px !important;
+      }
+      .ocr_text_div {
+        position: absolute;
+        opacity: 0.7;
+        font-size: calc(100% + 1cqw);
+        overflow: hidden;
+        border: 2px solid CornflowerBlue;
+        color: transparent !important;
+        background: none !important;
+      }
+    </style>
+  </head>
+  <body class="__className_7f45d3">
+    <main class="flex min-h-screen flex-col items-center">
+      <div
+        class="lg:pt-20 pt-5 bg-[#09A4FC] w-full h-full justify-between flex flex-col"
+      >
+        <div class="flex flex-col items-center">
+          <div style="transform: none">
+            <img
+              alt="logo"
+              loading="lazy"
+              width="500"
+              height="500"
+              decoding="async"
+              data-nimg="1"
+              style="color: transparent; visibility: hidden"
+              srcset="
+                /_next/image?url=%2Fimages%2Flogo.png&amp;w=640&amp;q=75  1x,
+                /_next/image?url=%2Fimages%2Flogo.png&amp;w=1080&amp;q=75 2x
+              "
+              src="./assets/img/logo.png"
+              data-xblocker="processing"
+            />
+            <h1 class="lg:text-4xl text-2xl text-center lg:mt-5 font-medium">
+              Powered by Base
+            </h1>
+          </div>
+          <div
+            class="flex lg:flex-row flex-col justify-center items-center w-full lg:mt-20 mt-10 lg:pt-10"
+          >
+            <img
+              alt="logo"
+              loading="lazy"
+              width="750"
+              height="400"
+              decoding="async"
+              data-nimg="1"
+              class="lg:order-1 order-3 2xl:max-w-[750px] lg:max-w-[575px] max-w-[400px] w-full lg:mt-0 mt-5"
+              style="color: transparent; visibility: hidden"
+              srcset="
+                /_next/image?url=%2Fimages%2Fspock1.png&amp;w=750&amp;q=75  1x,
+                /_next/image?url=%2Fimages%2Fspock1.png&amp;w=1920&amp;q=75 2x
+              "
+              src="./assets/img/spock1.png"
+              data-xblocker="processing"
+            />
+            <div class="lg:order-0 order-1">
+              <div style="transform: none">
+                <div class="flex flex-col items-center">
+                  <p
+                    class="lg:text-5xl text-3xl text-center lg:mt-5 mt-3 lg:max-w-[650px] max-w-[550px] px-4 lg:leading-[3.75rem]"
+                  >
+                    <span class="text-[#FE3C3C]">SPOCK</span> is THE alien who
+                    escaped from Area 51 and Landed on the Base Network
+                  </p>
+                  <div
+                    class="flex md:flex-row flex-col gap-y-10 justify-center lg:mt-20 mt-10 items-center sm:gap-x-8 gap-x-6 lg:mb-5"
+                    style="transform: none"
+                  >
+                    <a
+                      target="_blank"
+                      class="hover:scale-110 rotate-[8deg] md:px-10 px-4 py-2 bg-[#3CC0FE] border-[3px] border-black text-4xl"
+                      href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base"
+                      >BUY SPOCK</a
+                    >
+                    <div class="flex flex-col gap-x-5 gap-y-8">
+                      <div class="flex flex-row gap-x-5">
+                        <a target="_blank" href="https://x.com/SpockOnBase"
+                          ><svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 512 512"
+                            class="hover:scale-110 -rotate-[7deg] sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[7px] bg-black rounded-[2px]"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                            ></path></svg></a
+                        ><a target="_blank" href="https://t.me/spockbase"
+                          ><svg
+                            stroke="currentColor"
+                            fill="currentColor"
+                            stroke-width="0"
+                            viewBox="0 0 448 512"
+                            class="hover:scale-110 rotate-[7deg] sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[7px] bg-black rounded-[2px]"
+                            height="1em"
+                            width="1em"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                            ></path></svg
+                        ></a>
+                      </div>
+                      <div class="flex flex-row gap-x-5">
+                        <a
+                          target="_blank"
+                          href="https://www.dextools.io/app/en/base/pair-explorer/0x51f09ba94893b7b0f8f60fe44a3f10ebe71bcc01?t=1718870970915"
+                          ><img
+                            alt=""
+                            loading="lazy"
+                            width="75"
+                            height="75"
+                            decoding="async"
+                            data-nimg="1"
+                            class="hover:scale-110 -rotate-[7deg] sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[6px] bg-black rounded-[2px]"
+                            style="color: transparent"
+                            srcset="
+                              /_next/image?url=%2Fimages%2Fdextools.png&amp;w=96&amp;q=75  1x,
+                              /_next/image?url=%2Fimages%2Fdextools.png&amp;w=256&amp;q=75 2x
+                            "
+                            src="./assets/img/dextools.png" /></a
+                        ><a
+                          target="_blank"
+                          href="https://dexscreener.com/base/0x51f09ba94893b7b0f8f60fe44a3f10ebe71bcc01"
+                          ><img
+                            alt=""
+                            loading="lazy"
+                            width="75"
+                            height="75"
+                            decoding="async"
+                            data-nimg="1"
+                            class="hover:scale-110 rotate-[7deg] sm:h-[55px] h-[55px] w-[55px] text-white sm:p-[10px] p-[6px] bg-black rounded-[2px]"
+                            style="color: transparent"
+                            srcset="
+                              /_next/image?url=%2Fimages%2Fdexscreen.png&amp;w=96&amp;q=75  1x,
+                              /_next/image?url=%2Fimages%2Fdexscreen.png&amp;w=256&amp;q=75 2x
+                            "
+                            src="./assets/img/dexscreen.png"
+                        /></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="rfm-marquee-container"
+          style="
+            --pause-on-hover: running;
+            --pause-on-click: running;
+            --width: 100%;
+            --transform: none;
+          "
+        >
+          <div
+            class="rfm-marquee"
+            style="
+              --play: running;
+              --direction: normal;
+              --duration: 16.14s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="rfm-initial-child-container">
+              <div class="rfm-child" style="--transform: none">
+                <img
+                  alt="logo"
+                  loading="lazy"
+                  width="9999"
+                  height="50"
+                  decoding="async"
+                  data-nimg="1"
+                  class="w-full"
+                  srcset="
+                    /_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x
+                  "
+                  src="./assets/img/border.png"
+                  style="color: transparent"
+                />
+              </div>
+              <div class="rfm-child" style="--transform: none">
+                <img
+                  alt="logo"
+                  loading="lazy"
+                  width="9999"
+                  height="50"
+                  decoding="async"
+                  data-nimg="1"
+                  class="w-full"
+                  srcset="
+                    /_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x
+                  "
+                  src="./assets/img/border.png"
+                  style="color: transparent"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="rfm-marquee"
+            style="
+              --play: running;
+              --direction: normal;
+              --duration: 16.14s;
+              --delay: 0s;
+              --iteration-count: infinite;
+              --min-width: 100%;
+            "
+          >
+            <div class="rfm-child" style="--transform: none">
+              <img
+                alt="logo"
+                loading="lazy"
+                width="9999"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                class="w-full"
+                srcset="
+                  /_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x
+                "
+                src="./assets/img/border.png"
+                style="color: transparent"
+              />
+            </div>
+            <div class="rfm-child" style="--transform: none">
+              <img
+                alt="logo"
+                loading="lazy"
+                width="9999"
+                height="50"
+                decoding="async"
+                data-nimg="1"
+                class="w-full"
+                srcset="
+                  /_next/image?url=%2Fimages%2Fborder.png&amp;w=3840&amp;q=75 1x
+                "
+                src="./assets/img/border.png"
+                style="color: transparent"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-10 bg-[#1d1d1d] w-full h-full lg:pb-20 pb-10">
+        <div class="container mx-auto">
+          <h1
+            class="lg:text-8xl text-6xl text-center mt-5 text-[#3CC0FE] order-0"
+            style="transform: none"
+          >
+            The Legend
+          </h1>
+          <div
+            class="flex lg:flex-row flex-col items-center justify-between w-full lg:mt-20 pt-10 gap-x-10 lg:order-1 order-2"
+          >
+            <div
+              class="flex flex-col gap-y-5 lg:order-0 order-1"
+              style="transform: none"
+            >
+              <p
+                class="text-white max-w-[750px] text-center lg:text-4xl text-2xl px-4"
+              >
+                In a star system far far away, an advanced alien named
+                <span class="text-[#ED3B23]">Spock</span> crash-landed on
+                Earth's Area 51, where he was held captive and studied. After
+                years of captivity, Spock managed to escape and found refuge on
+                the decentralized
+                <span class="text-[#ED3B23]">Base Network</span>. Determined to
+                return home, Spock immersed himself in learning about and
+                trading <span class="text-[#ED3B23]">meme coins</span> and
+                <span class="text-[#ED3B23]">cryptocurrencies</span>, hoping to
+                one day fund his space mission back home.
+              </p>
+              <a
+                class="mx-auto rotate-[2deg] hover:scale-110 px-10 py-2 bg-[#3CC0FE] lg:mt-20 mt-10 text-4xl border-black border-[5px] w-fit"
+                href="https://www.spock.xyz/howtobuy"
+                >HOW TO BUY</a
+              >
+            </div>
+            <div
+              class="flex flex-col lg:order-1 order-0 justify-center items-center"
+              style="transform: none"
+            >
+              <img
+                alt="the legend"
+                loading="lazy"
+                width="600"
+                height="600"
+                decoding="async"
+                data-nimg="1"
+                class="2xl:max-w-[600px] xl:max-w-[550px] lg:max-w-[500px] max-w-[80%] lg:mb-0 mb-10 border-[5px] border-[#3CC0FE]"
+                style="color: transparent; visibility: hidden"
+                srcset="
+                  /_next/image?url=%2Fimages%2Flegend.png&amp;w=640&amp;q=75  1x,
+                  /_next/image?url=%2Fimages%2Flegend.png&amp;w=1200&amp;q=75 2x
+                "
+                src="./assets/img/legend.png"
+                data-xblocker="processing"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="absolute w-full z-10 hidden">
+          <div
+            class="rfm-marquee-container w-full overflow-hidden"
+            style="
+              --pause-on-hover: running;
+              --pause-on-click: running;
+              --width: 100%;
+              --transform: none;
+            "
+          >
+            <div
+              class="rfm-marquee"
+              style="
+                --play: running;
+                --direction: reverse;
+                --duration: 0s;
+                --delay: 0s;
+                --iteration-count: infinite;
+                --min-width: 100%;
+              "
+            >
+              <div class="rfm-initial-child-container">
+                <div class="rfm-child" style="--transform: none">
+                  <img
+                    alt="logo"
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                    decoding="async"
+                    data-nimg="1"
+                    class="bounce 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[200px]"
+                    srcset="
+                      /_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75  1x,
+                      /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x
+                    "
+                    src="./assets/img/disk.png"
+                    data-xblocker="processing"
+                    style="color: transparent; visibility: hidden"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="rfm-marquee"
+              style="
+                --play: running;
+                --direction: reverse;
+                --duration: 0s;
+                --delay: 0s;
+                --iteration-count: infinite;
+                --min-width: 100%;
+              "
+            >
+              <div class="rfm-child" style="--transform: none">
+                <img
+                  alt="logo"
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                  decoding="async"
+                  data-nimg="1"
+                  class="bounce 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[200px]"
+                  srcset="
+                    /_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75  1x,
+                    /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x
+                  "
+                  src="./assets/img/disk.png"
+                  data-xblocker="processing"
+                  style="color: transparent; visibility: hidden"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-10 bg-[#09A4FC] w-full h-full lg:pb-20 pb-10">
+        <div class="container mx-auto">
+          <div class="flex flex-col items-center">
+            <h1
+              class="lg:text-8xl text-6xl text-center mt-5"
+              style="transform: none"
+            >
+              Tokenomics
+            </h1>
+            <p
+              class="text-white text-center lg:text-4xl text-2xl max-w-[700px] mt-10 px-4"
+              style="transform: none"
+            >
+              Utilizing his superior technology and cosmic wit, Spock created
+              <span class="text-[#ED3B23]">999 million</span> Spock Tokens, a
+              meme token symbolizing rebellion, curiosity, and the quest for
+              freedom.
+            </p>
+            <div
+              class="mt-20 flex lg:flex-row flex-col justify-evenly w-full items-center"
+            >
+              <div
+                class="flex flex-col justify-center items-center lg:mb-0 mb-10 lg:order-0 order-1 gap-x-10"
+                style="transform: none"
+              >
+                <img
+                  alt="tokenomics spock"
+                  loading="lazy"
+                  width="600"
+                  height="600"
+                  decoding="async"
+                  data-nimg="1"
+                  class="2xl:max-w-[600px] xl:max-w-[550px] lg:max-w-[500px] max-w-[85%] rounded-[5px] lg:mt-0 border-[5px] border-black"
+                  style="color: transparent; visibility: hidden"
+                  srcset="
+                    /_next/image?url=%2Fimages%2Ftokenomics.png&amp;w=640&amp;q=75  1x,
+                    /_next/image?url=%2Fimages%2Ftokenomics.png&amp;w=1200&amp;q=75 2x
+                  "
+                  src="./assets/img/tokenomics.png"
+                  data-xblocker="processing"
+                /><a
+                  target="_blank"
+                  class="px-20 rotate-[8deg] py-2 bg-[#3CC0FE] text-4xl border-black border-[3px] mt-20 hover:scale-110 bounce lg:block hidden"
+                  href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base"
+                  >BUY SPOCK</a
+                >
+              </div>
+              <div
+                class="flex flex-col lg:gap-y-10 gap-y-5 lg:order-0 order-1 lg:w-fit w-full justify-center items-center lg:pb-20"
+                style="transform: none"
+              >
+                <p
+                  class="bg-[#3CC0FE] p-10 pt-5 pb-3 text-center 2xl:min-w-[650px] lg:min-w-[500px] max-w-[500px] leading-[3.25rem] border-[4px] border-black w-[95%]"
+                >
+                  <span class="lg:text-5xl text-3xl">TOTAL SUPPLY</span
+                  ><br /><span class="lg:text-3xl text-xl"
+                    >1,000,000,000 $SPOCK</span
+                  >
+                </p>
+                <p
+                  class="bg-[#3CC0FE] p-10 pt-5 pb-3 text-center 2xl:min-w-[650px] lg:min-w-[500px] max-w-[500px] leading-[3.25rem] border-[4px] border-black w-[95%]"
+                >
+                  <span class="lg:text-5xl text-3xl">TOKEN ADDRESS</span
+                  ><br /><span
+                    class="break-all leading-0 lg:text-3xl text-xl break-all"
+                    >0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00</span
+                  >
+                </p>
+              </div>
+              <a
+                target="_blank"
+                class="px-20 rotate-[8deg] py-2 bg-[#3CC0FE] lg:text-4xl text-3xl border-black border-[3px] mt-20 hover:scale-110 lg:hidden rotate-[2deg] order-2 mb-3"
+                href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base"
+                >BUY SPOCK</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full h-full overflow-hidden">
+        <div class="bg-avail w-full lg:min-h-screen min-h-[50vh]">
+          <div class="container mx-auto">
+            <div
+              class="flex flex-col h-full lg:items-start items-center justify-between"
+            >
+              <div
+                class="lg:px-[150px] sm:px-20 px-10 lg:mx-20 mx-10 -rotate-12 lg:py-2 py-1 bg-[#3CC0FE] lg:text-5xl text-3xl border-black border-[3px] lg:mt-20 mt-10 w-fit"
+              >
+                Available On
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pt-10 bg-[#09A4FC] w-full h-full overflow-hidden">
+        <div class="container mx-auto flex flex-col items-center">
+          <h1
+            class="lg:text-8xl text-6xl text-center mt-5"
+            style="transform: none"
+          >
+            SOCIALS
+          </h1>
+          <p
+            class="text-center lg:text-3xl text-3xl max-w-[400px] mt-5 px-4 mx-auto"
+            style="transform: none"
+          >
+            Join the $spock community
+          </p>
+          <div
+            class="flex flex-row items-center gap-x-10 mt-10"
+            style="transform: none"
+          >
+            <a target="_blank" href="https://x.com/SpockOnBase"
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 512 512"
+                class="hover:scale-110 -rotate-12 lg:h-[70px] h-[50px] lg:w-[70px] w-[50px] text-white p-[10px] bg-black"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                ></path></svg></a
+            ><a target="_blank" href="https://t.me/spockbase"
+              ><svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 448 512"
+                class="hover:scale-110 rotate-12 lg:h-[70px] h-[50px] lg:w-[70px] w-[50px] text-white p-[10px] bg-black"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"
+                ></path></svg
+            ></a>
+          </div>
+          <div
+            class="flex lg:flex-row flex-col justify-evenly w-full items-center lg:mt-20"
+            style="transform: none"
+          >
+            <img
+              alt="socials spock"
+              loading="lazy"
+              width="700"
+              height="700"
+              decoding="async"
+              data-nimg="1"
+              class="2xl:max-w-[700px] xl:max-w-[600px] lg:max-w-[500px] lg:order-0 order-1 fly hidden"
+              style="color: transparent; visibility: hidden"
+              srcset="
+                /_next/image?url=%2Fimages%2Fspock2.png&amp;w=750&amp;q=75  1x,
+                /_next/image?url=%2Fimages%2Fspock2.png&amp;w=1920&amp;q=75 2x
+              "
+              src="./assets/img/spock2.png"
+              data-xblocker="processing"
+            />
+            <div class="flex flex-row gap-x-20 lg:order-1 order-0">
+              <a
+                target="_blank"
+                class="mt-20 px-10 py-2 bg-[#3CC0F] text-4xl border-[4px] border-black hover:text-black pump"
+                href="https://app.uniswap.org/swap?inputCurrency=ETH&amp;outputCurrency=0x48E618876A11Fa762FcdB918Eb9CDEDaF3B14E00&amp;chain=base"
+                >BUY SPOCK</a
+              ><img
+                alt="logo"
+                loading="lazy"
+                width="300"
+                height="300"
+                decoding="async"
+                data-nimg="1"
+                class="lg:block hidden"
+                style="color: transparent; visibility: hidden"
+                srcset="
+                  /_next/image?url=%2Fimages%2Flogo.png&amp;w=384&amp;q=75 1x,
+                  /_next/image?url=%2Fimages%2Flogo.png&amp;w=640&amp;q=75 2x
+                "
+                src="./assets/img/logo(1).png"
+                data-xblocker="processing"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="relative w-full z-10 mt-10">
+          <div
+            class="rfm-marquee-container w-full overflow-hidden"
+            style="
+              --pause-on-hover: running;
+              --pause-on-click: running;
+              --width: 100%;
+              --transform: none;
+            "
+          >
+            <div
+              class="rfm-marquee"
+              style="
+                --play: running;
+                --direction: reverse;
+                --duration: 4.743333333333333s;
+                --delay: 0s;
+                --iteration-count: infinite;
+                --min-width: 100%;
+              "
+            >
+              <div class="rfm-initial-child-container">
+                <div class="rfm-child" style="--transform: none">
+                  <img
+                    alt="logo"
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                    decoding="async"
+                    data-nimg="1"
+                    class="bounce2 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[250px]"
+                    srcset="
+                      /_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75  1x,
+                      /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x
+                    "
+                    src="./assets/img/disk.png"
+                    style="color: transparent; visibility: hidden"
+                    data-xblocker="processing"
+                  />
+                </div>
+              </div>
+            </div>
+            <div
+              class="rfm-marquee"
+              style="
+                --play: running;
+                --direction: reverse;
+                --duration: 4.743333333333333s;
+                --delay: 0s;
+                --iteration-count: infinite;
+                --min-width: 100%;
+              "
+            >
+              <div class="rfm-child" style="--transform: none">
+                <img
+                  alt="logo"
+                  loading="lazy"
+                  width="500"
+                  height="500"
+                  decoding="async"
+                  data-nimg="1"
+                  class="bounce2 2xl:max-w-[500px] lg:max-w-[400px] md:max-w-[300px] max-w-[250px]"
+                  srcset="
+                    /_next/image?url=%2Fimages%2Fdisk.png&amp;w=640&amp;q=75  1x,
+                    /_next/image?url=%2Fimages%2Fdisk.png&amp;w=1080&amp;q=75 2x
+                  "
+                  src="./assets/img/disk.png"
+                  style="color: transparent; visibility: hidden"
+                  data-xblocker="processing"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="./assets/js/webpack-0081b58bb8a2a00a.js"
+      async=""
+    ></script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+      self.__next_f.push([2, null]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:HL["/_next/static/media/2c2fc5ac4fb02646-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n2:HL["/_next/static/css/53a5be8aa435f8c1.css","style"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '3:I[5751,[],""]\n5:I[2814,["240","static/chunks/53c13509-4f6676193cfc8e9e.js","699","static/chunks/8e1d74a4-9cac90607d5f8139.js","181","static/chunks/181-f299d48394143557.js","829","static/chunks/829-2acd7e26007fb755.js","931","static/chunks/app/page-45776debb7662c8b.js"],"default"]\n6:I[3743,["240","static/chunks/53c13509-4f6676193cfc8e9e.js","699","static/chunks/8e1d74a4-9cac90607d5f8139.js","181","static/chunks/181-f299d48394143557.js","829","static/chunks/829-2acd7e26007fb755.js","931","static/chunks/app/page-45776debb7662c8b.js"],"default"]\n7:I[8316,["240","static/chunks/53c13509-4f6676193cfc8e9e.js","699","static/chunks/8e1d74a4-9cac90607d5f8139.js","181","static/chunks/181-f299d48394143557.js","829","static/chunks/829-2acd7e26007fb755.js","931","static/chunks/app/page-45776debb7662c8b.js"],"default"]\n8:I[9520,["240","static/chunks/53c13509-4f6676193cfc8e9e.js","699","static/chunks/8e1d74a4-9cac90607d5f8139.js","181","static/chunks/181-f299d48394143557.js","829","static/chunks/829-2acd7e26007fb755.js","931","static/chunks/app/page-45776debb7662c8b.js"],"default"]\n9:I[9275,[],""]\na:I[1343,[],""]\nc:I[6130,[],""]\nd:[]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '0:[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/53a5be8aa435f8c1.css","precedence":"next","crossOrigin":"$undefined"}]],["$","$L3",null,{"buildId":"yOVOoVC5Afe_P96Jj2URg","assetPrefix":"","initialCanonicalUrl":"/","initialTree":["",{"children":["__PAGE__",{}]},"$undefined","$undefined",true],"initialSeedData":["",{"children":["__PAGE__",{},[["$L4",["$","main",null,{"className":"flex min-h-screen flex-col items-center","children":[["$","$L5",null,{}],["$","$L6",null,{}],["$","$L7",null,{}],["$","div",null,{"className":"w-full h-full overflow-hidden","children":["$","div",null,{"className":"bg-avail w-full lg:min-h-screen min-h-[50vh]","children":["$","div",null,{"className":"container mx-auto","children":["$","div",null,{"className":"flex flex-col h-full lg:items-start items-center justify-between","children":["$","div",null,{"className":"lg:px-[150px] sm:px-20 px-10 lg:mx-20 mx-10 -rotate-12 lg:py-2 py-1 bg-[#3CC0FE] lg:text-5xl text-3xl border-black border-[3px] lg:mt-20 mt-10 w-fit","children":"Available On"}]}]}]}]}],["$","$L8",null,{}]]}]],null],null]},[["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/images/favicon.ico","sizes":"any"}],["$","meta",null,{"property":"og:image","content":"/images/opengraph-image.png","itemProp":"image"}],["$","meta",null,{"name":"twitter:card","content":"summary_large_image"}],["$","meta",null,{"name":"twitter:image","content":"/images/opengraph-image.png"}]]}],["$","body",null,{"className":"__className_7f45d3","children":["$","$L9",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$La",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\\"Segoe UI\\",Roboto,Helvetica,Arial,sans-serif,\\"Apple Color Emoji\\",\\"Segoe UI Emoji\\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":"404"}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],"notFoundStyles":[],"styles":null}]}]]}],null],null],"couldBeIntercepted":false,"initialHead":[false,"$Lb"],"globalErrorComponent":"$c","missingSlots":"$Wd"}]]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'b:[["$","meta","0",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","1",{"charSet":"utf-8"}],["$","title","2",{"children":"Spock"}],["$","meta","3",{"name":"description","content":"The alien who escaped from Area 51 and Landed on the Base Network."}],["$","meta","4",{"name":"next-size-adjust"}]]\n4:null\n',
+      ]);
+    </script>
+    <next-route-announcer style="position: absolute"
+      ><template shadowrootmode="open"
+        ><div
+          aria-live="assertive"
+          id="__next-route-announcer__"
+          role="alert"
+          style="
+            position: absolute;
+            border: 0px;
+            height: 1px;
+            margin: -1px;
+            padding: 0px;
+            width: 1px;
+            clip: rect(0px, 0px, 0px, 0px);
+            overflow: hidden;
+            white-space: nowrap;
+            overflow-wrap: normal;
+          "
+        ></div></template
+    ></next-route-announcer>
+  </body>
+</html>
